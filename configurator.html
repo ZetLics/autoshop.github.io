@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конфигуратор</title>
+  <link rel="stylesheet" href="css/ss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Automotive Business</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании</a>
+      </nav>
+      <button class="burger-menu">☰</button>
+    </div>
+  </header>
+
+<main class="container">
+  <h1>Конфигуратор</h1>
+  <form id="car-configurator">
+    <div class="form-group">
+      <label for="color">Выберите цвет кузова:</label>
+      <select id="color" name="color">
+        <option value="Белый">Белый</option>
+        <option value="Чёрный">Чёрный</option>
+        <option value="Красный">Красный</option>
+        <option value="Синий">Синий</option>
+        <option value="Зелёный">Зелёный</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="interior">Тип материала интерьера:</label>
+      <select id="interior" name="interior">
+        <option value="Ткань">Ткань</option>
+        <option value="Кожа">Кожа</option>
+        <option value="Алькантара">Алькантара</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Дополнительные опции:</label>
+      <div>
+        <label><input type="checkbox" name="options" value="Аудиосистема Bose"> Аудиосистема Bose</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="options" value="Спортивный пакет"> Спортивный пакет</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="options" value="Система автономного вождения"> Система автономного вождения</label>
+      </div>
+    </div>
+
+    <button type="button" id="calculate-button">Рассчитать</button>
+	
+  </form>
+  
+<div id="result" class="result">
+      <h2>Ваш выбор:</h2>
+      <p id="selected-color">Цвет кузова: <span>-</span></p>
+      <p id="selected-interior">Материал интерьера: <span>-</span></p>
+      <p id="selected-options">Дополнительные опции: <span>-</span></p>
+      <p id="total-price">Итоговая цена: <span>-</span></p>
+  </div>
+  
+</main>
+
+  <footer class="footer">
+      <div class="container">
+          <p>© 2025 Automotive Business. Все права защищены.</p>
+          <div class="contacts">
+              <h3>Контакты</h3>
+              <p>Адрес: г. Москва, ул. Примерная, 123</p>
+              <p>Email: info@automotive-business.com</p>
+              <p>Телефон: +7 (495) 123-45-67</p>
+              <div class="social-links">
+                  <a href="https://t.me/yourchannel" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://vk.com/yourpage" target="_blank" class="vk"><i class="fab fa-vk"></i></a>
+                  <a href="https://youtube.com/yourchannel" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="js/jopa.js"></script>
+</body>
+</html>
